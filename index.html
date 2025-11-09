@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="player">
+        <div class="playing-now">
+            <img id="cover" src="img/" alt="Carátula" width="220" height="220">
+            <div class="info">
+                <h2 id="title">Bla bla</h2>
+                <h3 id="artist">Bla bla</h3>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev">
+                <img src="img/" alt="prev">
+            </button>
+            <button id="play">
+                <img src="" alt="play">
+            </button>
+            <button id="next">
+                <img src="" alt="next">
+            </button>
+        </div>
+
+        <div class="progress-bar" id="progress-container"> 
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="time">
+            <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+        </div>
+
+        <ul id="playlist" class="playlist">
+
+        </ul>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
