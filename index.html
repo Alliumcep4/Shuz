@@ -7,38 +7,106 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="player">
-        <div class="playing-now">
-            <img id="cover" src="img/" alt="Carátula" width="220" height="220">
-            <div class="info">
-                <h2 id="title">Bla bla</h2>
-                <h3 id="artist">Bla bla</h3>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="search-box">
+            <img src="img/search_icon.png" alt="Search" class="search-icon">
+            <input type="text" placeholder="Search your song..." class="search-input">
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <button class="favourites-btn">
+                <img src="img/like.png" alt="Heart">
+                Favourites
+            </button>
+            
+            <div class="sidebar-song">
+                <img src="img/c1.jpg" alt="Cover" class="sidebar-cover">
+                <div class="sidebar-song-info">
+                    <p class="sidebar-title">Title</p>
+                    <p class="sidebar-name">Name</p>
+                    <p class="sidebar-artist">Artist</p>
+                    <p class="sidebar-name">Name</p>
+                </div>
             </div>
-        </div>
+            
+            <div class="playback-controls">
+                <button class="control-small">
+                    <img src="img/like.png" alt="Like">
+                </button>
+                
+                <div class="main-controls">
+                    <button class="control-medium">
+                        <img src="img/back.png" alt="Previous">
+                    </button>
+                    <button class="control-play">
+                        <img src="img/play_1.png" alt="Play">
+                    </button>
+                    <button class="control-medium">
+                        <img src="img/forward.png" alt="Next">
+                    </button>
+                </div>
+                
+                <button class="control-small">
+                    <img src="img/volume.png" alt="Volume">
+                </button>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </aside>
 
-        <div class="controls">
-            <button id="prev">
-                <img src="img/" alt="prev">
-            </button>
-            <button id="play">
-                <img src="" alt="play">
-            </button>
-            <button id="next">
-                <img src="" alt="next">
-            </button>
-        </div>
+        <main class="main-area">
+            <div class="playlist-content">
+                <div class="playlist-header-section">
+                    <img src="img/c1.jpg" alt="Playlist cover" class="playlist-cover">
+                    
+                    <div class="playlist-details">
+                        <h2 class="playlist-title">Playlist name</h2>
+                        
+                        <div class="playlist-actions">
+                            <button class="random-btn">
+                                <img src="img/random.png" alt="Random">
+                            </button>
+                            
+                            <button class="play-big-btn">
+                                <img src="img/play_1.png" alt="Play">
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="progress-bar" id="progress-container"> 
-            <div id="progress" class="progress"></div>
-        </div>
-        <div class="time">
-            <span id="current-time">0:00</span> / <span id="duration">0:00</span>
-        </div>
-
-        <ul id="playlist" class="playlist">
-
-        </ul>
-    </main>
+                <ul class="song-list">
+                    <li class="song-item">
+                        <img src="img/c1.jpg" alt="Song cover" class="song-thumb">
+                        <div class="song-info">
+                            <p class="song-name">song name</p>
+                            <p class="song-author">Author</p>
+                        </div>
+                    </li>
+                    <li class="song-item">
+                        <img src="img/c2.jpg" alt="Song cover" class="song-thumb">
+                        <div class="song-info">
+                            <p class="song-name">song name</p>
+                            <p class="song-author">Author</p>
+                        </div>
+                    </li>
+                    <li class="song-item">
+                        <img src="img/c3.jpg" alt="Song cover" class="song-thumb">
+                        <div class="song-info">
+                            <p class="song-name">song name</p>
+                            <p class="song-author">Author</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
 
     <script src="main.js"></script>
 </body>
